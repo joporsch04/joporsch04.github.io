@@ -11,9 +11,9 @@
 
     // TODO: Hier dein eigenes Firebase-Config-Objekt einsetzen:
     const firebaseConfig = {
-      apiKey: "DEIN_API_KEY",
-      authDomain: "deinprojekt.firebaseapp.com",
-      projectId: "deinprojekt",
+      apiKey: "AIzaSyDS2MdSJ0zlAF6YlNfdAprjW0dhWBuVyX8",
+      authDomain: "github-pages-login.firebaseapp.com",
+      projectId: "github-pages-login",
     };
 
     const app = initializeApp(firebaseConfig);
