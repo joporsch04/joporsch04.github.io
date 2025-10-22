@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Login - Your Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="auth.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#projects">Projects</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="loginForm">
+      <h2>Login</h2>
+      <input id="email" placeholder="Email"><br><br>
+      <input id="password" type="password" placeholder="Password"><br><br>
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="protected" style="display:none;">
+      <h2>Protected Content</h2>
+      <p>Secret content for logged-in users only.</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </main>
+</body>
+</html>

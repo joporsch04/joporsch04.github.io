@@ -1,58 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Login Demo</title>
-  <script type="module">
-    // Firebase SDK importieren
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
-    import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } 
-      from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+# My Personal Website
 
-    // TODO: Hier dein eigenes Firebase-Config-Objekt einsetzen:
-    const firebaseConfig = {
-      apiKey: "AIzaSyDS2MdSJ0zlAF6YlNfdAprjW0dhWBuVyX8",
-      authDomain: "github-pages-login.firebaseapp.com",
-      projectId: "github-pages-login",
-    };
+This is my personal website hosted on GitHub Pages.
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
+## Features
+- About section
+- Projects showcase  
+- Contact information
+- Firebase authentication for protected content
 
-    // Login-Handler
-    async function login() {
-      const email = document.getElementById("email").value;
-      const pw = document.getElementById("password").value;
-      try {
-        await signInWithEmailAndPassword(auth, email, pw);
-      } catch (e) {
-        alert(e.message);
-      }
-    }
+## Local Development
+1. Clone this repository
+2. Open `index.html` in your browser
+3. For Firebase features, serve files through a local server
 
-    // Logout
-    function logout() { signOut(auth); }
-
-    // Auth-Status beobachten
-    onAuthStateChanged(auth, user => {
-      document.getElementById("protected").style.display = user ? "block" : "none";
-      document.getElementById("loginForm").style.display = user ? "none" : "block";
-    });
-
-    window.login = login;
-    window.logout = logout;
-  </script>
-</head>
-<body>
-  <div id="loginForm">
-    <input id="email" placeholder="Email"><br>
-    <input id="password" type="password" placeholder="Passwort"><br>
-    <button onclick="login()">Login</button>
-  </div>
-
-  <div id="protected" style="display:none;">
-    <p>Geheime Inhalte nur für angemeldete Nutzer.</p>
-    <button onclick="logout()">Logout</button>
-  </div>
-</body>
-</html>
+## Live Site
+Visit: https://joporsch04.github.io
