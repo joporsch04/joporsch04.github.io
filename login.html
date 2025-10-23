@@ -2,7 +2,14 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Login - Your Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Johannes Porsch</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="auth.js"></script>
 </head>
@@ -19,17 +26,89 @@
   </header>
 
   <main>
-    <div id="loginForm">
-      <h2>Login</h2>
-      <input id="email" placeholder="Email"><br><br>
-      <input id="password" type="password" placeholder="Password"><br><br>
-      <button onclick="login()">Login</button>
+    <div id="loginForm" class="login-container">
+      <h2>Login to Access Protected Content</h2>
+      <form id="loginFormElement">
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input id="password" type="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <div id="loginError" style="color: red; margin-top: 1rem; display: none;"></div>
     </div>
 
-    <div id="protected" style="display:none;">
-      <h2>Protected Content</h2>
-      <p>Secret content for logged-in users only.</p>
-      <button onclick="logout()">Logout</button>
+    <div id="protected" style="display:none;" class="protected-content">
+      <h2>🔒 Protected Dashboard</h2>
+      <p>Welcome! Here's your exclusive content:</p>
+      
+      <div class="stats">
+        <div class="stat">
+          <h4 id="userCount">42</h4>
+          <p>Active Users</p>
+        </div>
+        <div class="stat">
+          <h4 id="projectCount">18</h4>
+          <p>Projects</p>
+        </div>
+        <div class="stat">
+          <h4 id="messageCount">156</h4>
+          <p>Messages</p>
+        </div>
+      </div>
+
+      <div class="data-grid">
+        <div class="data-card">
+          <h3>📊 Analytics Data</h3>
+          <ul id="analyticsData">
+            <li>Page Views: <strong>2,847</strong></li>
+            <li>Unique Visitors: <strong>1,923</strong></li>
+            <li>Bounce Rate: <strong>23%</strong></li>
+            <li>Avg. Session: <strong>4:32</strong></li>
+          </ul>
+        </div>
+        
+        <div class="data-card">
+          <h3>💼 Recent Projects</h3>
+          <ul id="projectsData">
+            <li>Portfolio Website <span style="color: green;">✓ Complete</span></li>
+            <li>E-commerce App <span style="color: orange;">🔄 In Progress</span></li>
+            <li>Mobile Game <span style="color: blue;">📋 Planning</span></li>
+          </ul>
+        </div>
+        
+        <div class="data-card">
+          <h3>📧 Messages</h3>
+          <ul id="messagesData">
+            <li><strong>John Doe:</strong> "Great work on the project!"</li>
+            <li><strong>Jane Smith:</strong> "Can we schedule a meeting?"</li>
+            <li><strong>Mike Wilson:</strong> "Love the new design!"</li>
+          </ul>
+        </div>
+        
+        <div class="data-card">
+          <h3>⚙️ System Status</h3>
+          <ul id="systemData">
+            <li>Server Status: <span style="color: green;">🟢 Online</span></li>
+            <li>Database: <span style="color: green;">🟢 Connected</span></li>
+            <li>API Calls Today: <strong>1,247</strong></li>
+            <li>Uptime: <strong>99.8%</strong></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem;">
+        <button onclick="refreshData()" class="btn btn-secondary" style="width: auto; margin-right: 1rem;">
+          🔄 Refresh Data
+        </button>
+        <button onclick="logout()" class="btn btn-secondary" style="width: auto;">
+          🚪 Logout
+        </button>
+      </div>
     </div>
   </main>
 </body>
