@@ -1,6 +1,4 @@
-# My Personal Website
-
-This is my personal website hosted on GitHub Pages.
+# Personal Website
 
 ## Features
 - About section
