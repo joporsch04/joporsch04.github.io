@@ -103,12 +103,10 @@
           </div>
           <button type="submit" class="btn-primary">Login</button>
         </form>
-        <div class="demo-info">
-          <small>Demo: test@example.com / password123</small>
-        </div>
         <div id="loginError" class="error-message"></div>
       </div>
 
+      <!-- Protected content - Data loaded dynamically from Firestore -->
       <div id="protected" style="display:none;" class="protected-content">
         <div class="dashboard-header">
           <h2>Dashboard</h2>
@@ -117,19 +115,19 @@
         
         <div class="stats-grid">
           <div class="stat">
-            <div class="stat-number" id="userCount">42</div>
+            <div class="stat-number" id="userCount">-</div>
             <div class="stat-label">Users</div>
           </div>
           <div class="stat">
-            <div class="stat-number" id="projectCount">18</div>
+            <div class="stat-number" id="projectCount">-</div>
             <div class="stat-label">Projects</div>
           </div>
           <div class="stat">
-            <div class="stat-number" id="messageCount">156</div>
+            <div class="stat-number" id="messageCount">-</div>
             <div class="stat-label">Messages</div>
           </div>
           <div class="stat">
-            <div class="stat-number" id="revenueCount">$12.5K</div>
+            <div class="stat-number" id="revenueCount">-</div>
             <div class="stat-label">Revenue</div>
           </div>
         </div>
@@ -139,19 +137,19 @@
           <div class="data-grid">
             <div class="data-item">
               <span>Page Views</span>
-              <strong id="pageViews">2,847</strong>
+              <strong id="pageViews">-</strong>
             </div>
             <div class="data-item">
               <span>Visitors</span>
-              <strong id="visitors">1,923</strong>
+              <strong id="visitors">-</strong>
             </div>
             <div class="data-item">
               <span>Bounce Rate</span>
-              <strong id="bounceRate">23%</strong>
+              <strong id="bounceRate">-</strong>
             </div>
             <div class="data-item">
               <span>Avg. Session</span>
-              <strong id="avgSession">4:32</strong>
+              <strong id="avgSession">-</strong>
             </div>
           </div>
         </div>
@@ -159,21 +157,7 @@
         <div class="data-section">
           <h3>Recent Activity</h3>
           <div id="activityList" class="activity-list">
-            <div class="activity-item">
-              <span class="activity-user">John Doe</span>
-              <span class="activity-text">completed project review</span>
-              <span class="activity-time">2 hours ago</span>
-            </div>
-            <div class="activity-item">
-              <span class="activity-user">Jane Smith</span>
-              <span class="activity-text">sent a message</span>
-              <span class="activity-time">4 hours ago</span>
-            </div>
-            <div class="activity-item">
-              <span class="activity-user">Mike Wilson</span>
-              <span class="activity-text">updated dashboard</span>
-              <span class="activity-time">6 hours ago</span>
-            </div>
+            <!-- Activity items loaded dynamically -->
           </div>
         </div>
 
@@ -185,7 +169,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 John Doe. All rights reserved.</p>
+    <p>&copy; 2025 Johannes Porsch. All rights reserved.</p>
   </footer>
 
   <script>
@@ -202,15 +186,6 @@
         }
       });
     });
-
-    // Simple data refresh
-    function refreshData() {
-      document.getElementById('userCount').textContent = Math.floor(Math.random() * 100) + 20;
-      document.getElementById('projectCount').textContent = Math.floor(Math.random() * 30) + 10;
-      document.getElementById('messageCount').textContent = Math.floor(Math.random() * 200) + 50;
-      document.getElementById('pageViews').textContent = (Math.floor(Math.random() * 5000) + 1000).toLocaleString();
-      document.getElementById('visitors').textContent = (Math.floor(Math.random() * 3000) + 500).toLocaleString();
-    }
   </script>
 </body>
 </html>
