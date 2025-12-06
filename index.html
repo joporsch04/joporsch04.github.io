@@ -1,256 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Johannes Porsch | Physics Student</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" type="image/svg+xml" href="icon.svg">
-  <script type="module" src="auth.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johannes Porsch</title>
+    <meta name="description" content="Portfolio of Johannes Porsch, Physics student and developer.">
+    <link rel="stylesheet" href="styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="nav-brand">Portfolio</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#cv">CV</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#login" class="login-link">Login</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <!-- Home Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h1>Johannes Porsch</h1>
-        <p class="subtitle">Physics Student</p>
-        <p class="description">test</p>
-      </div>
-    </section>
+    <header>
+        <div class="container nav-container">
+            <span class="logo">Johannes Porsch</span>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cv">Timeline</a></li>
+                    <li><a href="#projects">Work</a></li>
+                    <li><a href="mailto:joporsch04@gmail.com" class="nav-contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- About Section -->
-    <section id="about" class="section">
-      <h2>About</h2>
-      <div class="content">
-        <p>Physics student</p>
-        <div class="skills">
-          <span class="skill">Python</span>
-          <span class="skill">Firebase</span>
-        </div>
-      </div>
-    </section>
+    <main>
+        <section id="about" class="hero">
+            <div class="container">
+                <h1>Physics student.</h1>
+                <p class="intro-text">
+                    M.Sc. Physics Student specializing in <strong>theoretical</strong> and <strong>computational physics</strong> with an emphasis on mathematics.
+                </p>
+                
+                <div class="tech-tags">
+                    <span>Python</span>
+                    <span>Linux</span>
+                    <span>C/C++</span>
+                    <span>Numerical Simulations</span>
+                </div>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project">
-          <h3>Project 1</h3>
-          <p>content</p>
-          <div class="project-links">
-            <a href="#" class="link">Demo</a>
-            <a href="#" class="link">Code</a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Project 2</h3>
-          <p>content</p>
-          <div class="project-links">
-            <a href="#" class="link">Demo</a>
-            <a href="#" class="link">Code</a>
-          </div>
-        </div>
-        <div class="project">
-          <h3>Project 3</h3>
-          <p>content</p>
-          <div class="project-links">
-            <a href="#" class="link">Demo</a>
-            <a href="#" class="link">Code</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <div class="contact-content">
-        <p>test</p>
-        <div class="contact-links">
-          <a href="mailto:john@example.com" class="contact-link">Email</a>
-          <a href="https://github.com" class="contact-link">GitHub</a>
-          <a href="https://linkedin.com" class="contact-link">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CV Section -->
-    <section id="cv" class="section">
-      <h2>Curriculum Vitae</h2>
-      <div class="cv-content">
-        <p>Download or view my detailed CV to learn more about my academic background, research, and technical skills.</p>
-        
-        <div class="cv-actions">
-          <a href="cv.pdf" download class="cv-button">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
-            <span>Download</span>
-          </a>
-          <button onclick="toggleCVPreview(event)" class="cv-button" id="viewButton">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-              <circle cx="12" cy="12" r="3"></circle>
-            </svg>
-            <span id="previewButtonText">View</span>
-          </button>
-        </div>
-        
-        <!-- CV Preview -->
-        <div id="cv-preview" class="cv-preview">
-          <div class="cv-preview-container">
-            <iframe src="cv.pdf" class="cv-iframe" title="CV Preview"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Login Section -->
-    <section id="login" class="section">
-      <div id="loginForm" class="login-container">
-        <h2>Login</h2>
-        <form id="loginFormElement">
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input id="email" type="email" required>
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" type="password" required>
-          </div>
-          <button type="submit" class="btn-primary">Login</button>
-        </form>
-        <div id="loginError" class="error-message"></div>
-      </div>
-
-      <!-- Protected content - Data loaded dynamically from Firestore -->
-      <div id="protected" style="display:none;" class="protected-content">
-        <div class="dashboard-header">
-          <h2>Dashboard</h2>
-          <button onclick="logout()" class="btn-secondary">Logout</button>
-        </div>
-        
-        <div class="stats-grid">
-          <div class="stat">
-            <div class="stat-number" id="userCount">-</div>
-            <div class="stat-label">Users</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number" id="projectCount">-</div>
-            <div class="stat-label">Projects</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number" id="messageCount">-</div>
-            <div class="stat-label">Messages</div>
-          </div>
-          <div class="stat">
-            <div class="stat-number" id="revenueCount">-</div>
-            <div class="stat-label">Revenue</div>
-          </div>
-        </div>
-
-        <div class="data-section">
-          <h3>Analytics</h3>
-          <div class="data-grid">
-            <div class="data-item">
-              <span>Page Views</span>
-              <strong id="pageViews">-</strong>
+                <div class="button-group">
+                    <a href="#projects" class="btn-primary">Projects</a>
+                    <a href="cv.pdf" target="_blank" class="btn-text">CV &rarr;</a>
+                </div>
             </div>
-            <div class="data-item">
-              <span>Visitors</span>
-              <strong id="visitors">-</strong>
+        </section>
+
+        <section id="cv">
+            <div class="container">
+                <h2 class="section-label">Background</h2>
+                
+                <div class="resume-list">
+                    <div class="resume-item">
+                        <div class="resume-date">09.2025 – Present</div>
+                        <div class="resume-main">
+                            <h3>M.Sc. Physics</h3>
+                            <span class="institution">ETH Zurich</span>
+                            <p>Focus: QFT, GR, Quantum Optics.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="resume-item">
+                        <div class="resume-date">10.2022 - 07.2025</div>
+                        <div class="resume-main">
+                            <h3>B.Sc. Physics</h3>
+                            <span class="institution">LMU Munich</span>
+                            <p>Focus: Computational physics, Thesis: Theoretical Strong Field Physics.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="data-item">
-              <span>Bounce Rate</span>
-              <strong id="bounceRate">-</strong>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-label">Selected Work</h2>
+                
+                <div class="project-list">
+                    <article class="project-row">
+                        <div class="project-info">
+                            <h3><a href="#">Bachelor thesis</a></h3>
+                            <p>The Impact of the Dynamic Stark Shift on Sub-cycle Ionization of Atoms in the Multiphoton Regime.</p>
+                            <div class="mini-tags">
+                                <span>Python</span>
+                                <span>C++</span>
+                                <span>Theoretical Physics</span>
+                                <span>Mathematica</span>
+                            </div>
+                        </div>
+                        <div class="project-link">
+                            <a href="https://github.com/joporsch04/Bachelor-thesis">GitHub &nearr;</a>
+                        </div>
+                    </article>
+
+                    <article class="project-row">
+                        <div class="project-info">
+                            <h3><a href="#">Research Assistan at MPQ</a></h3>
+                            <p>Reconstruction of strong-field ionization dynamics from numerically determined ionization probabilities.</p>
+                            <div class="mini-tags">
+                                <span>Python</span>
+                                <span>Numerical Simulations</span>
+                                <span>Mathematica</span>
+                            </div>
+                        </div>
+                        <!-- <div class="project-link">
+                            <a href="https://github.com/joporsch04/Bachelor-thesis">GitHub &nearr;</a>
+                        </div> -->
+                    </article>
+                </div>
             </div>
-            <div class="data-item">
-              <span>Avg. Session</span>
-              <strong id="avgSession">-</strong>
+        </section>
+
+        <footer>
+            <div class="container footer-content">
+                <div class="footer-left">
+                    &copy; 2025 Johannes Porsch
+                </div>
+                <div class="footer-right">
+                    <a href="https://www.linkedin.com/in/joporsch04/">LinkedIn</a>
+                    <a href="https://github.com/joporsch04/">GitHub</a>
+                    <a href="mailto:joporsch04@gmail.com">Email</a>
+                </div>
             </div>
-          </div>
-        </div>
+        </footer>
 
-        <div class="data-section">
-          <h3>Recent Activity</h3>
-          <div id="activityList" class="activity-list">
-            <!-- Activity items loaded dynamically -->
-          </div>
-        </div>
-
-        <div class="actions">
-          <button onclick="refreshData()" class="btn-secondary">Refresh Data</button>
-        </div>
-      </div>
-    </section>
-
-  <footer>
-    <p>&copy; 2025 Johannes Porsch. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Smooth scrolling for navigation
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        const href = this.getAttribute('href');
-        if (href === '#') return;
-        
-        e.preventDefault();
-        const target = document.querySelector(href);
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-    
-    // Toggle CV Preview with smooth animation
-    function toggleCVPreview(event) {
-      event?.preventDefault();
-      const preview = document.getElementById('cv-preview');
-      const buttonText = document.getElementById('previewButtonText');
-      const viewButton = document.getElementById('viewButton');
-      
-      if (preview.classList.contains('show')) {
-        // Close preview
-        preview.classList.remove('show');
-        viewButton.classList.remove('active');
-        if (buttonText) buttonText.textContent = 'View';
-      } else {
-        // Open preview
-        preview.classList.add('show');
-        viewButton.classList.add('active');
-        if (buttonText) buttonText.textContent = 'Close';
-        
-        // Smooth scroll to preview after short delay
-        setTimeout(() => {
-          preview.scrollIntoView({
-            behavior: 'smooth',
-            block: 'nearest'
-          });
-        }, 200);
-      }
-    }
-  </script>
+    </main>
 </body>
 </html>
