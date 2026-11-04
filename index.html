@@ -1,188 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johannes Porsch &middot; ETH Zürich</title>
-    <meta name="description" content="Academic personal website of Johannes Porsch, M.Sc. Physics student at ETH Zürich.">
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Johannes Porsch</title>
+<meta name="description" content="Johannes Porsch, M.Sc. student in theoretical physics at ETH Zürich.">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<main>
 
-    <div class="top-stripe"></div>
+<header>
+  <h1>Johannes Porsch</h1>
+  <p class="affil">
+    M.Sc. student, Department of Physics, ETH Zürich<br>
+    <a href="mailto:jporsch@student.ethz.ch">jporsch@student.ethz.ch</a>
+  </p>
+</header>
 
-    <header class="navbar">
-        <div class="nav-container">
-            <a href="#" class="brand">Johannes Porsch</a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#interests">Interests</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#research">Research &amp; Work</a></li>
-                    <li><a href="cv.pdf" target="_blank" class="cv-link">CV [PDF]</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<p>
+  I am a Master's student in physics at ETH Zürich, working towards formal quantum field theory.
+  I am mostly interested in effective field theories and in non-perturbative methods,
+  in particular the conformal bootstrap and integrability.
+</p>
+<p>
+  Before coming to Zürich I did my Bachelor's at LMU Munich, where I wrote my thesis on
+  strong-field ionization at the Max Planck Institute of Quantum Optics.
+</p>
+<p class="links">
+  <a href="cv.pdf">CV</a> ·
+  <a href="https://github.com/joporsch04">GitHub</a> ·
+  <a href="https://www.linkedin.com/in/joporsch04/">LinkedIn</a> ·
+  <a href="mailto:joporsch04@gmail.com">joporsch04@gmail.com</a>
+</p>
 
-    <main class="page-body">
+<h2>Interests</h2>
+<ul>
+  <li><b>Theoretical physics:</b> effective field theories, conformal bootstrap, integrability, general relativity.</li>
+  <li><b>Mathematics:</b> algebraic topology, partial differential equations.</li>
+</ul>
 
-        <section id="about" class="section">
-            <div class="profile-header">
-                <div>
-                    <h1 class="page-title">Johannes Porsch</h1>
-                    <p class="role-affiliation">M.Sc. Physics &middot; Theoretical Physics &middot; ETH Zürich</p>
-                </div>
-                <div class="quick-contact">
-                    <a href="mailto:joporsch04@gmail.com">joporsch04@gmail.com</a>
-                    <span class="sep">&middot;</span>
-                    <a href="https://github.com/joporsch04" target="_blank" rel="noopener">GitHub</a>
-                    <span class="sep">&middot;</span>
-                    <a href="https://www.linkedin.com/in/joporsch04/" target="_blank" rel="noopener">LinkedIn</a>
-                </div>
-            </div>
+<h2>Education</h2>
+<ul class="dated">
+  <li><span>09/2025 – now</span>
+    <div><b>M.Sc. Physics</b>, ETH Zürich
+      <p class="note">Focus: formal QFT and particle physics, effective field theories, mathematical physics.</p></div></li>
+  <li><span>10/2022 – 07/2025</span>
+    <div><b>B.Sc. Physics</b>, LMU Munich
+      <p class="note">Focus: computational and theoretical physics. Thesis in theoretical strong-field physics.</p></div></li>
+  <li><span>10/2023 – 08/2025</span>
+    <div><b>Mathematics</b> (B.Sc. coursework), LMU Munich
+      <p class="note">Analysis, linear algebra, numerical mathematics, ODE, PDE, complex analysis.</p></div></li>
+</ul>
 
-            <p class="bio-text">
-                I am a Master’s student in Physics at <strong>ETH Zürich</strong> focusing on theoretical physics. 
-                My studies center on formal aspects of <strong>quantum field theory</strong>, specifically <strong>effective field theories, with strong interests in the <strong>bootstrap</strong> and <strong>integrability</strong>.
-            </p>    
-            <p class="bio-text">
-                Prior to ETH, I completed my B.Sc. in Physics at <strong>LMU Munich</strong> with a thesis on strong-field ionization dynamics, and worked as a research assistant at the <strong>Max Planck Institute of Quantum Optics.
-            </p>
-        </section>
+<h2>Research</h2>
+<ul class="dated">
+  <li><span>03/2025 – 07/2025</span>
+    <div><b>Bachelor thesis</b>, LMU Munich &amp; Max Planck Institute of Quantum Optics
+      <p class="note"><i>The impact of the dynamic Stark shift on sub-cycle ionization of atoms in the multiphoton regime.</i>
+      [<a href="https://github.com/joporsch04/Bachelor-thesis">code</a>]</p>
+      <p class="tools">Python, C++, Mathematica, Docker, git</p></div></li>
+  <li><span>05/2024 – 09/2024</span>
+    <div><b>Research assistant</b>, Max Planck Institute of Quantum Optics, Garching
+      <p class="note">Reconstruction of strong-field ionization dynamics from numerically determined
+      ionization probabilities, using the TDSE solver tRecX and the TIPTOE sampling method.</p>
+      <p class="tools">Python, C++, Mathematica</p></div></li>
+</ul>
 
-        <section id="interests" class="section">
-            <h2 class="section-heading">Current Interests</h2>
-            <div class="topics-grid">
-                <div class="topic-box">
-                    <h3>Theoretical Physics</h3>
-                    <p>Effective Field Theories, Conformal Bootstrap, Integrability, General Relativity.</p>
-                </div>
-                <div class="topic-box">
-                    <h3>Mathematics</h3>
-                    <p>Algebraic Topology, Partial Differential Equations.</p>
-                </div>
-            </div>
-        </section>
+<h2>Teaching</h2>
+<ul class="dated">
+  <li><span>02/2026 – 06/2026</span>
+    <div><b>Teaching assistant</b>, ETH Zürich
+      <p class="note">Electrodynamics for physics Bachelor students.</p></div></li>
+  <li><span>09/2024 – 02/2025</span>
+    <div><b>Tutor</b>, LMU Munich
+      <p class="note">Mathematical Methods for Physicists; Mathematical Preparation for Physicists.</p></div></li>
+</ul>
 
-        <section id="education" class="section">
-            <h2 class="section-heading">Education</h2>
+<footer>Last updated November 2026</footer>
 
-            <div class="card-list">
-                <article class="entry-card accent-card">
-                    <div class="entry-header">
-                        <div>
-                            <h3 class="entry-title">M.Sc. in Physics</h3>
-                            <div class="entry-sub">ETH Zürich &middot; Switzerland</div>
-                        </div>
-                        <span class="period">09/2025 – Present</span>
-                    </div>
-                    <p class="entry-desc">
-                        Focus: Formal QFT and Particle Physics, Effective Field Theories, Mathematical Physics.
-                    </p>
-                </article>
-
-                <article class="entry-card">
-                    <div class="entry-header">
-                        <div>
-                            <h3 class="entry-title">B.Sc. in Physics</h3>
-                            <div class="entry-sub">Ludwig-Maximilians-Universität München (LMU) &middot; Germany</div>
-                        </div>
-                        <span class="period">10/2022 – 07/2025</span>
-                    </div>
-                    <p class="entry-desc">
-                        Focus: Computational physics, theoretical physics. Thesis: Theoretical Strong Field Physics.
-                    </p>
-                </article>
-            </div>
-        </section>
-
-        <section id="research" class="section">
-            <h2 class="section-heading">Research Experience</h2>
-
-            <div class="card-list">
-                <article class="entry-card">
-                    <div class="entry-header">
-                        <div>
-                            <h3 class="entry-title">Bachelor Thesis</h3>
-                            <div class="entry-sub">LMU Munich &middot; Max Planck Institute of Quantum Optics</div>
-                        </div>
-                        <span class="period">03/2025 - 07/2025</span>
-                    </div>
-                    <p class="entry-desc">
-                        The Impact of the Dynamic Stark Shift on Sub-cycle Ionization of Atoms in the Multiphoton Regime.
-                    </p>
-                    <div class="entry-footer">
-                        <span class="tools-label">Tools: Python, C++, docker, git, Mathematica</span>
-                        <a href="https://github.com/joporsch04/Bachelor-thesis" class="card-link" target="_blank" rel="noopener">Code Repository &rarr;</a>
-                    </div>
-                </article>
-
-                <article class="entry-card">
-                    <div class="entry-header">
-                        <div>
-                            <h3 class="entry-title">Research Assistant</h3>
-                            <div class="entry-sub">Max Planck Institute of Quantum Optics (MPQ), Garching</div>
-                        </div>
-                        <span class="period">05/2024 – 09/2024</span>
-                    </div>
-                    <p class="entry-desc">
-                        Reconstruction of strong-field ionization dynamics from numerically determined ionization probabilities.
-                    </p>
-                    <div class="entry-footer">
-                        <span class="tools-label">Tools: Python, C++, Mathematica</span>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-
-        
-        <section id="teaching" class="section">
-            <h2 class="section-heading">Other Experience</h2>
-
-            <div class="card-list">
-                <article class="entry-card">
-                    <div class="entry-header">
-                        <div>
-                            <h3 class="entry-title">Teaching Assistant</h3>
-                            <div class="entry-sub">ETH Zürich &middot; Department of Physics</div>
-                        </div>
-                        <span class="period">02/2026 – 06/2026</span>
-                    </div>
-                    <p class="entry-desc">
-                        Electrodynamics for Physics Bachelor students
-                    </p>
-                </article>
-
-                <article class="entry-card">
-                    <div class="entry-header">
-                        <div>
-                            <h3 class="entry-title">Teaching Assistant</h3>
-                            <div class="entry-sub">LMU Munich &middot; Faculty of Physics</div>
-                        </div>
-                        <span class="period">09/2024 – 02/2025</span>
-                    </div>
-                    <p class="entry-desc">
-                        Mathematical Methods for Physicists and Mathematical preperation for Physicists
-                    </p>
-                </article>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="footer">
-        <div class="footer-container">
-            <span>&copy; 2026 Johannes Porsch</span>
-            <span>ETH Zürich &middot; Department of Physics</span>
-        </div>
-    </footer>
-
+</main>
 </body>
 </html>
